@@ -1,0 +1,852 @@
+html{
+    scroll-behavior: smooth !important; 
+}
+
+/*Nav bar*/
+nav{
+   backdrop-filter: blur(10px);
+   background-color: rgba(0, 0, 0, 0.83);
+   position: fixed;
+   top: 0px;
+   transition: 0.3s ease;
+   z-index: 1000;
+   width: 100%;
+   margin-top: 0px;
+}
+
+nav p{
+   font-family: 'Poppins', sans-serif;
+   color: rgb(248, 0, 0);
+   padding: 0px 15px;
+   font-size: 20px;
+}
+
+#Choices{
+    margin: 10px;
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    position:relative;
+
+}
+
+nav table{
+    border-collapse: separate;
+    border-spacing: 15px 0;
+    position: absolute;
+    left: 70vw;
+    top: 1.8vh;
+}
+#Choices th{
+    padding: 8px;
+    position: relative;
+    font-family:'Poppins', sans-serif;
+    color: white;
+    font-size: 15px;
+}
+#Choices .NavButt::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;         
+  left: 0;
+  top:30px;
+  background-color: red;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
+#Choices .NavButt:hover{
+    color:red;
+    cursor: pointer;
+}
+
+#Choices .NavButt:hover::after {
+  transform: scaleX(1);
+}
+
+#Choices .NavButt:active{
+    color:red;
+    cursor: pointer;
+}
+
+#Choices .NavButt:active::after {
+  transform: scaleX(1);
+}
+
+/*main body of website*/
+body{
+    background-color: #0b0e0b;
+    margin: 0px;
+    position:relative;
+}
+
+
+/*profile section of designs*/
+#Profile{
+    position: relative;
+    top: 15vh;
+    left: 49vw;
+    width: 50%;
+}
+
+#Hello{
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+
+#Profile h2 span{
+    color:red;
+     font-family:'Poppins', sans-serif;
+}
+.Typewriter h1{
+    color: white;
+    font-family:'Poppins', sans-serif;
+}
+
+
+.Typewriter{
+    width: 35vw;
+}
+
+.Typewriter h1 span{
+    position: relative;
+    font-size: clamp(1rem, 8vw, 3.5rem); 
+    white-space: nowrap;
+    clip-path: inset(0 100% 0 0); 
+    animation: TypingReveal 5s steps(21) infinite;
+
+}
+
+.Typewriter h1 span::before{
+    content: "Ahron-john M. Taguba";
+    color: white;
+    font-family:'Poppins', sans-serif;
+    animation: Text 10s infinite;
+    
+}
+   
+.Typewriter h1 span::after{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    background-color: inherit;
+    background-attachment: fixed;
+    border-left: .156vw white solid;
+    right: -10px;
+    animation: Cursor .8s infinite;
+    animation: CursorMove 5s steps(21) infinite;
+}
+
+
+
+#Dreams{
+    color: red;
+    font-family:'Poppins', sans-serif;
+}
+
+#Profile p{
+     color: white;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 15px;
+}
+
+
+
+#ProfileContainer{
+    height:100vh;
+    width: 100%;
+    background-image: linear-gradient(to top right, rgba(13, 13, 11, 1), rgba(13, 13, 11, 1), rgba(13, 13, 11, 1), rgb(32 12 10), rgb(32 12 10));
+}
+
+#Profile a button{
+    margin:10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-radius:100%;
+    text-align: center;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+#Profile a button:hover{
+    background-color: red;
+    cursor: pointer;
+}
+
+#Download{
+    background-color: red;
+}
+
+.Icons{
+    width: 20px; 
+    height: 20px;
+    fill: red;   
+    transition: fill 0.3s ease;
+}
+
+#Profile a button:hover .Icons{
+    fill: white;
+}
+
+/*picture frame and download section*/
+#PictureFrame{
+    border: 3px red solid;
+    position: absolute;
+    top: 25vh;
+    left: 10vw;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    box-shadow: 0 0 20px red;
+    transition: all 0.3s ease;
+    animation: Up-Down 3s linear infinite alternate;
+    overflow: hidden;
+}
+
+#Pic1{
+    width: 250px;
+    height: 250px;
+}
+
+#ChoiceButt{
+    position: absolute;
+    top: 74vh;
+    left: 8.7vw;
+    display:flex;
+    flex-direction: row;
+}
+
+.PictureFrameButt{
+    width: 137.8px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 2px;
+    border: 2px red solid;
+    background: inherit;
+    color:white;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+    transition: 0.2s ease-in-out;
+}
+
+.PictureFrameButt:hover {
+    background-color: red;
+    cursor: pointer;
+    transform: scaleX(1.02);
+}
+
+#MainProfileContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.ExperiencesContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 86vh;
+    margin-top: auto;
+    gap: 20px; 
+    padding: 2rem;
+    grid-template-rows: repeat(2, auto);
+    width: 50%;
+    margin-top: 2rem;
+
+}
+
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/*experience section*/
+.ExperienceCards{
+    border: 3px red solid;
+    height: 12rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(13, 13, 11, 1) 49.99%, red 50%, rgba(13, 13, 11, 1) 100%);
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s ease, color 0.3s ease;
+    transition: 0.2s ease-in-out;
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.ExperienceCards:hover{
+    background-position: 100% 0%;
+    color: white;
+    transform: scaleX(1.02);
+    box-shadow: 0 0 20px red;
+}
+
+.ExperienceCards:hover i{
+    color: white;
+}
+
+.SkillsHeader{
+    color: white;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+.SkillsDescription{
+    color: white;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.ExperienceCards i{
+    color:red;
+    font-size: 20px;
+}
+
+.ExperienceHeader{
+    grid-column: 1 / span 2; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.ExperiencesContainer h1 span{
+    color: red;
+    font-family: 'Poppins' ,sans-serif;
+}
+
+.FrameContainer{
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-direction: column;
+}
+
+#Pic2{
+    width: 100%;
+    height: 15rem;
+}
+
+#PictureFrame2{
+    border: 3px red solid;
+    width: 25rem;
+    height: 15rem;
+    border-radius: 10%;
+    background-color:white;
+    text-align: center;
+    box-shadow: 0 0 20px red;
+    transition: all 0.3s ease;
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+    overflow:hidden;
+}
+
+#MainExperiencesContainer {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+}
+
+#MainExperiencesContainer2 {
+    display: flex;
+    gap: 10px; 
+    justify-content: center;
+}
+
+.HobbiesCard{
+    border: 3px white solid;
+    border-radius: 20px;
+    width: 30vw;
+    text-align: center;
+    padding: .2rem;
+    margin-top: .7rem;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    top: .8rem;
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+.HobbiesCard i{
+    color:red;
+    font-size: 20px;
+}
+
+#HobbyHeader{
+    grid-column: 1 / span 2; 
+    color: red;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 0px;
+}
+
+.HobbiesHeader{
+    grid-column: 1 / span 2; 
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: .5rem;
+}
+
+.HobbyDesc{
+    color: white;
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+
+.HobbiesCard:hover{
+    transform: scaleX(1.02);
+    box-shadow: 0 0 15px white;
+}
+
+/*lessons Section*/
+.LessonsContainer{
+    display: grid;
+    gap: 10px; 
+    justify-content: center;
+    margin-top: 2rem;
+    grid-template-columns: repeat(3, 300px);
+    gap: 4rem;
+    
+}
+
+.LessonsCard{
+    height : 63vh;
+    width: 20rem;
+    border-radius: 20px;
+    margin-top: 0;
+    background-color: #1a1a1a;
+    transition: 0.2s ease-in-out;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: left;
+    background-size: 200% 100%;
+    background-position: 0% 0%;
+    transition: background-position 0.5s ease, color 0.3s ease;
+    transition: 0.2s ease-in-out;
+    animation: Appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+
+#LessonsHeader{
+    grid-column: 1 / -1;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 5rem;
+    
+}
+
+#LessonsHeader span{
+    color: red;
+}
+
+.LessonsCard:hover{
+    transform: scaleX(1.02);
+    box-shadow:   0 4px 16px rgba(0, 0, 0, 0.1), 0 0 18px -6px rgba(255, 8, 29, 0.63);
+}
+
+.LessonsPic{
+    height: 12rem;
+    width: 20rem;
+}
+
+.LessonsCardHeader{
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;  
+    margin-top: .5rem;
+    margin-bottom: 0;
+}
+
+.LessonsCardHeader span{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    
+    
+}
+
+.LessonsCardDesc{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    width: 90%;
+}
+
+.LessonsButtons{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center; 
+    text-align: left;
+}
+
+.LessonsButtons a{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin: .5rem;  
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.LessonsButtons a:hover{
+    color: red;
+}
+
+/*contact Section*/
+#ContactsContainer{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2rem;
+}
+
+#ContactsHeader{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#ContactsHeader span{
+    color: red;
+}
+
+form{
+    width: 55rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 1rem;
+}
+
+#Message{
+    grid-column: 1 / span 2;
+    width: 100%;
+    height: 10rem;
+    justify-items: left;
+    box-sizing: border-box;
+    padding: 0px 5px 8rem ;
+    
+}
+
+.Row1And2{
+    height: 3rem;
+}
+
+form input{
+    border: none;
+    border-radius: 15px;
+    background-color: #1a1a1a;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease;
+    outline: none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+form input:focus{
+    box-shadow: 0 0 5px red;
+}
+
+#SubmitButt{
+    margin-top: 2rem;
+    width: 8rem;
+    height: 3rem;
+    background-color: red;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+#SubmitButt:hover{
+    transform: scaleX(1.02);
+}
+
+footer{
+    background-color: rgba(0, 0, 0, 0.83);
+    bottom: 0;
+    left: 0;
+    height: 3rem;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#FooterText{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*KeyFrames/animations*/
+@keyframes CursorBlink {
+    50% { opacity: 0; }
+}
+
+@keyframes Text{
+    0%,50%{
+        content: "Ahron-john M. Taguba";
+    }
+    51%,100%{
+        content: "An Aspiring Developer";
+    }
+}
+
+@keyframes TypingReveal {
+    0%, 10% { clip-path: inset(0 100% 0 0); } 
+    40%, 60% { clip-path: inset(0 0% 0 0); } 
+    90%, 100% { clip-path: inset(0 100% 0 0); }
+}
+
+@keyframes CursorMove {
+    0%, 10% { left: 0%; }
+    40%, 60% { left: 100%; }
+    90%, 100% { left: 0%; }
+}
+
+@keyframes Up-Down {
+    to{
+        transform:translateY(-20px);
+    }
+}
+
+@keyframes Appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/*Resolution Optimizations*/
+@media (max-width: 760px) {
+    
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #MainProfileContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        padding: 20px;
+        position:relative;
+        top: 4.4rem;
+        width:100%;
+        overflow-x: hidden;
+    }
+
+    #ProfileContainer {
+        height:50rem;
+    }
+
+    
+    #PictureFrame {
+        position: relative; 
+        top: 20px; 
+        left: 0;
+        margin: 0 auto;
+        width: 200px; 
+        height: 200px;
+    }
+
+    
+    #Profile {
+        position: relative;
+        top: 40px;
+        left: 0;
+        margin: 8px;
+        width: 90%; 
+    }
+
+    
+    .Typewriter {
+        width: 100%;
+    }
+
+    
+    #ChoiceButt {
+        position: relative;
+        top: 60px;
+        left: 0;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+
+    
+    nav table {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin: 10px auto;
+        border-spacing: 10px 0;
+    }
+
+    nav p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Choices .NavButt::after {
+        top:45px;
+    }
+
+   .ExperiencesContainer {
+        width: 95%; 
+        grid-template-columns: 1fr;
+        height: auto; 
+        padding: 1rem;
+        gap: 15px;
+    }
+
+    .FrameContainer{
+        width: 90vw; 
+    }
+
+    #PictureFrame2{
+        width: 90vw; 
+    }
+    
+    .HobbiesCard {
+        width: 90vw; 
+    }
+
+    .ExperienceHeader{
+        grid-column: 1; 
+        text-align: center;
+    }
+    
+    #HobbyHeader{
+        grid-column: 1; 
+        text-align: center;
+    }
+
+     .HobbiesHeader {
+        grid-column: 1; 
+        text-align: center;
+    }
+
+    
+    #MainExperiencesContainer{
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    #MainExperiencesContainer2 {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .ExperienceCards {
+        height: auto;
+        min-height: 10rem;
+    }
+
+    
+    .SkillsHeader {
+        font-size: 16px;
+    }
+    
+    .SkillsDescription {
+        font-size: 11px;
+    }
+
+    .LessonsContainer {
+        grid-template-columns: 1fr; 
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .LessonsCard {
+        width: 100%; 
+        max-width: 350px; 
+        margin: 0 auto; 
+        height: auto;  
+        min-height: 450px;
+    }
+
+    .LessonsPic {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9; 
+        object-fit: cover;
+    }
+
+    #LessonsHeader {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #ContactsContainer {
+        height: auto; 
+        padding: 2rem 1rem;
+    }
+
+    form {
+        width: 90%; 
+        max-width: 900%; 
+        grid-template-columns: 1fr; 
+        gap: 1.5rem; 
+        margin-right: 2rem;
+    }
+
+    #Message {
+        grid-column: 1; 
+        height: 12rem;
+    }
+
+    .Row1And2 {
+        height: 3.5rem; 
+    }
+
+    #SubmitButt {
+        width: 50%; 
+        height: 3.5rem;
+        border-radius: 10px;
+        margin-right: 2rem;
+    }
+
+    #ContactsHeader {
+        margin-top: 2rem;
+        font-size: 1.5rem;
+    }
+}
