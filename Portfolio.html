@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="PortfolioStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "jL_VpA5LtPNzMAXQi",
+        });
+    })();
+    </script>
+    <script src="Script.js"></script>
+</head>
+
+<body>
+  
+   
+   
+
+    <nav>
+        <!-- Navigation bar, will make it stick to top when scrolled :)-->
+            <div id="Choices">
+            <p>Portfolio.  <i class="fa-solid fa-address-card"></i></p>
+            <table>
+                <thead>
+                    <th class="NavButt"><a href="#MainProfile">About</a></th>
+                    <th class="NavButt"><a href="#MainExperiencesContainer">Experience</a></th>
+                    <th class="NavButt"><a href="#Lessons">Lessons</a></th>
+                    <th class="NavButt"><a href="#Contacts">Contacts</a></th>
+                </thead>
+            </table>
+            </div>
+    
+    </nav>
+    <!--Optimize for clarity(wag kakalimutan)-->
+    <!--Main Contents-->
+    <!--Profile-->
+    <main>
+       
+        <section id="MainProfile">
+           
+            <div id="MainProfileContainer">
+                
+                <div id="ProfileContainer">
+                
+                    <div id="PictureFrame">
+                    
+                        <img src="Images/Profile1.png" id="Pic1">
+                    
+                    </div>
+                
+                    <div id="ChoiceButt">
+                        
+                        <a href="Files/Resume.docx" target="blank"><button class="PictureFrameButt" id="Download">Download Resume</button></a>
+                        <a href="#Contacts"><button class="PictureFrameButt">Contact Me</button></a>
+               
+                    </div>
+
+                <div id="Profile">
+                    <h2 class="HelloIam" id="Hello">Hello, <span>I am</span> </h2>
+                    
+                    <div class="Typewriter">
+                      
+                        <h1><span></span></h1>
+                    
+                    </div>
+                    
+                    <h2 id="Dreams">Aspiring Programmer and Software Developer</h2>
+                    
+                    <!--About me-->
+                    <p>I am an aspiring developer passionate about creating a clean, responsive and visually alluring programs
+                    I enjoy turning ideas into a functional interactive experiences using HTML, CSS, JavaScript, C++ and Python.</p>
+                   
+                    <!--Motto-->
+                    <p><br>"Life is like a wiener, sometimes it's hard, but hard moments only lasts for a moment."</p>
+                    
+                    <!--Buttons for socials-->
+                    <a href="https://www.facebook.com/masong.ahronjohn" target="blank"><button><svg class="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47059 14.5 5.5 16 5.5H17.5V2.14015C17.5 2.14015 16.1367 1.91232 14.8359 1.91232C12.1121 1.91232 10.5 3.56004 10.5 6.5V9.5H7.5V13.5H10.5V22.5H14V13.5Z"/>
+                    </svg></button></a>
+                    <a href="https://github.com/Skibi00" target="blank"><button><svg class="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                    </svg></button></a>
+                    <a href="https://www.instagram.com/skibizen/" target="blank"><button><svg class="Icons" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                    </svg></button></a>
+                    
+                </div>
+                
+                </div>
+            
+            </div>
+        
+        </section>
+        
+        <section id="MainExperiencesContainer">
+            
+            <div class="ExperiencesContainer">
+               
+                <h1 class="ExperienceHeader">Technical <span>Skills</span></h1>
+                
+                <!--EveryExperience Card regarding to technical skills is here-->
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-code"></i>
+                    <p class="SkillsHeader">Basic Coding Skills<br></p>
+                    <p class="SkillsDescription">Possessing a strong foundation in coding through getting practical experience and learning necessary lessons. <br> ★ ★ ★ ★ ★ ★ ★ ★ (8/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                    <p class="SkillsHeader">Basic Troubleshooting Skills<br></p>
+                    <p class="SkillsDescription">Possesses foundational troubleshooting skills through problem analysis, testing, and practical problem-solving.<br> ★ ★ ★ ★ ★ ★  (6/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-database"></i>
+                    <p class="SkillsHeader">Digital Literacy<br></p>
+                    <p class="SkillsDescription">Possessing essential digital literacy skills with a focus on effective, responsible,  safe, and efficient use of technology .<br> ★ ★ ★ ★ ★ ★ ★ ★ ★ (9/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-desktop"></i>
+                    <p class="SkillsHeader">Computer Literacy<br></p>
+                    <p class="SkillsDescription">I possess this skill by effectively using operating systems, software applications, and basic system functions.<br> ★ ★ ★ ★ ★ ★ ★ ★ ★ (9/10)</p>
+                </div>
+            
+            </div>
+            
+            <div class="FrameContainer">
+                
+                <div id="PictureFrame2">
+                    
+                    <img src="Images/Profile2.png" id="Pic2">
+                
+                </div>
+            
+            </div>
+        
+        </section> 
+        
+        <section id="MainExperiencesContainer2">
+            
+            <div class="ExperiencesContainer">
+                
+                <h1 class="ExperienceHeader">Soft <span>Skills</span></h1>
+                
+                 <!--Every Experience Card regarding to soft skills is here-->
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-brain"></i>
+                    <p class="SkillsHeader">Critical Thinking<br></p>
+                    <p class="SkillsDescription">Approaches challenges by analyzing root causes and developing data-driven solutions rather than just addressing symptoms. <br> ★ ★ ★ ★ ★ ★ ★ ★ ★ (9/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-regular fa-clock"></i>
+                    <p class="SkillsHeader">Time Management<br></p>
+                    <p class="SkillsDescription">Efficiently manages multiple high-priority projects by utilizing organizational tools and delegating tasks to meet strict deadlines without sacrificing quality.<br> ★ ★ ★ ★ ★ ★  (6/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-regular fa-face-flushed"></i>
+                    <p class="SkillsHeader">Good Emotional Intelligence<br></p>
+                    <p class="SkillsDescription">Strong interpersonal awareness, used to manage professional relationships, navigate sensitive feedback, and foster a collaborative team culture.<br> ★ ★ ★ ★ ★ ★ ★ ★ ★ (9/10)</p>
+                </div>
+                
+                <div class="ExperienceCards">
+                    <i class="fa-solid fa-gear"></i>
+                    <p class="SkillsHeader">Adaptability<br></p>
+                    <p class="SkillsDescription">Proven ability to adjust to new technologies and shifting project scopes while maintaining a high standard of work in fast-paced environments.<br> ★ ★ ★ ★ ★ ★ ★ (7/10)</p>
+                </div>
+            
+            </div>
+            
+            <div class="FrameContainer">
+                
+                <h1 id="HobbyHeader">Hobbies and Interests</h1>
+               
+                 <!--Every Hobby Card is here-->
+                <div class="HobbiesCard">
+                    <i class="fa-solid fa-dice-six"></i>
+                    <p class="HobbiesHeader">Gaming</p>
+                    <p class="HobbyDesc">games can train my brain to calculate variables quickly, leading to more accurate decisions</p>
+                </div>
+                
+                <div class="HobbiesCard">
+                    <i class="fa-solid fa-microchip"></i>
+                    <p class="HobbiesHeader">Exploring New Technologies</p>
+                    <p class="HobbyDesc">This hobby keeps my skillset relevant and prevents my role from becoming obsolete in an evolving market.</p>
+                </div>
+                
+                <div class="HobbiesCard">
+                    <i class="fa-solid fa-wrench"></i>
+                    <p class="HobbiesHeader">PC Building</p>
+                    <p class="HobbyDesc">This hobby highlights hardware familiarity and high-level logic/troubleshooting skills.</p>
+                </div>
+            
+            </div>
+       
+        </section> 
+
+        <section id="Lessons">
+            
+            <div class = "LessonsContainer">
+                
+                <h1 id="LessonsHeader">Semester <span>Lessons</span></h1>
+                
+                <!--All lessons are here, Added 1 more so the 3 by 3 grid equalizes-->
+                <div class="LessonsCard" id="ComputingIndustry">
+                    
+                    <img src="Images/ComputingIndustry.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>The Computing Industry</b><br><span>Lesson 1</span></p>
+                    <p class="LessonsCardDesc">This lesson helps students understand how technology solves problems in local communities, schools, businesses, and government.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/ComputinIndustry.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=zFkKrWC9QkI" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="ComputingAndOtherSciences">
+                    
+                    <img src="Images/ComputingAndOtherSciences.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>Computing And Other Sciences</b><br><span>Lesson 2</span></p>
+                    <p class="LessonsCardDesc">This lesson teaches students how computing works together with the branches of science to solve real-world problems.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/ComputingSciences.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=CNFK86hJRfE" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="TheComputerSystem">
+                    
+                    <img src="Images/TheComputerSystem.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>The Computer System</b><br><span>Lesson 3</span></p>
+                    <p class="LessonsCardDesc">teaches how the different parts of a computer work together to process information and perform tasks used in many services.</p>
+                    
+                    <div class="LessonsButtons">
+                   
+                    <a href="Files/ComputerSystem.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=OvGn1RtSPSo" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="DataRepresentation">
+                    <img src="Images/Binary.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>Data presentation(Number Systems)</b><br><span>Lesson 4</span></p>
+                    <p class="LessonsCardDesc">This lesson It helps students understand that all informatio is converted into numerical form so computers can understand and work with it.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/DataPresentation.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=CxGSnA-RTsA" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                   
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="DigitalLogicSystem">
+                    
+                    <img src="Images/DigitalLogicSystem.png" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>Digital Logic System</b><br><span>Lesson 5</span></p>
+                    <p class="LessonsCardDesc">this lesson teaches how computers make decisions using  logical rules and how complex computer operations are built from basic logical operations.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/Logic.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=JQBRzsPhw2w" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="ElectronicMedia">
+                    
+                    <img src="Images/ElectronicMedia.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>Electronic Media</b><br><span>Lesson 6</span></p>
+                    <p class="LessonsCardDesc">This lesson teaches students how information is created, stored, and shared using electronic devices and digital platforms.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/ElectronicMedia.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=H2cYqkmyaQI" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                </div>
+               
+                <div class="LessonsCard" id="TheInternet">
+                   
+                    <img src="Images/Internet.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>The Internet</b><br><span>Lesson 7</span></p>
+                    <p class="LessonsCardDesc">This lesson teaches learners how computers and devices around the world are connected to share information and communicate.</p>
+                   
+                    <div class="LessonsButtons">
+                   
+                    <a href="Files/TheInternet.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=AEaKrq3SpW8" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="EthicsInComputing">
+                    
+                    <img src="Images/Ethics.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>Ethics in Computing</b><br><span>Lesson 8</span></p>
+                    <p class="LessonsCardDesc">This lesson teaches students how to use technology responsibly, safely, and fairly, emphasizing the importance of following rules in a digital environment.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/Ethics.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/playlist?list=PL5j69bFrYV3m6q1JoCCzBqer3Aigpiq__" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+                
+                <div class="LessonsCard" id="HTML">
+                    
+                    <img src="Images/HTML.jpg" class="LessonsPic">
+                    <p class="LessonsCardHeader"><b>HTML and CSS</b><br><span>Lesson 9</span></p>
+                    <p class="LessonsCardDesc">This lesson teaches students how to create and design web pages, which are very essential for websites, and businesses.</p>
+                    
+                    <div class="LessonsButtons">
+                    
+                    <a href="Files/HTML.pdf" target="blank"><i class="fa-solid fa-eye"></i> View Module</a> 
+                    <a href="https://www.youtube.com/watch?v=HGTJBPNC-Gw&t=13795s" target="blank"><i class="fa-solid fa-play"></i> Live Demo </a>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+
+        <section id="Contacts">
+            
+            <div id="ContactsContainer">
+                
+                <h1 id="ContactsHeader">Contact <span>Me</span></h1>
+                
+                <!--The user input is here-->
+                <form>
+                    
+                    <input type="text" placeholder="Full Name" required class="Row1And2" id="NameInput">
+                    <input type="text" placeholder="Email Adress" required class="Row1And2" id="EmailInput">
+                    <input type="text" placeholder="Mobile Number" required class="Row1And2" id="NumberInput">
+                    <input type="text" placeholder="Subject" required class="Row1And2" id="SubjectInput">
+                    <input type="text" placeholder="Message" required id="Message">
+                
+                    <button type="submit" onclick="SendEmail()" id="SubmitButt">Send Message</button>
+                </form>
+                
+               
+
+            </div>
+
+        </section>
+    
+    </main>
+
+    <footer>
+       
+        <p id="FooterText">© All Rights Reserved | Ahron-John M. Taguba</p>
+    
+    </footer>
+</body>
+</html>
